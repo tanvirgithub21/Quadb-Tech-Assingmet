@@ -1,0 +1,91 @@
+.nav-outsider {
+  background-color: #4d4d4d;
+}
+
+.nav-outsider > .nav {
+  height: 50px;
+  width: 100%;
+  position: relative;
+}
+
+.nav-outsider > .nav > .nav-header {
+  display: inline;
+}
+
+.nav-outsider > .nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px;
+}
+
+.nav-outsider > .nav > .nav-btn {
+  display: none;
+}
+
+.nav-outsider > .nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav-outsider > .nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav-outsider > .nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 600px) {
+  .nav-outsider > .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav-outsider > .nav > .nav-btn > .nav-icon-wrap {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .nav-outsider > .nav > .nav-btn > .nav-icon-wrap:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav-outsider > .nav > .nav-btn > .nav-icon-wrap > .nav-icon {
+    width: 35px;
+    height: 35px;
+    font-size: 2rem;
+    color: white;
+  }
+  .nav-outsider > .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav-outsider > .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav-outsider > .nav > .nav-links-close {
+    height: 0px;
+  }
+  .nav-outsider > .nav > .nav-links-open {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
